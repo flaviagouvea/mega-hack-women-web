@@ -17,10 +17,10 @@ financeiras para os responsáveis pelas crianças e informativos sobre violênci
 doméstica pessoas vulneráveis.
 
 
-## Getting Started
- * Install the current Noje.js version
- * Run `npm package manager`
- * Run `npm install -g @angular/cli`
- * Run `npm i`
- * Run `ng serve`
- * Go to [http://localhost:4200]. The app will automatically reload before changes.
+## Iniciando o projeto
+ * Instale a última versão de [Noje.js](https://nodejs.org/en/download/) 
+ * Rodar `npm package manager`
+ * Rodar `npm install -g @angular/cli`
+ * Rodar `npm i`
+ * Rodar `ng serve`
+ * Vá para [http://localhost:4200]. A página irá recarregar automaticamente depois de qualquer alteração.
