@@ -126,6 +126,7 @@ span {
 .footer {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   .people {
     align-items: center;
     img {
@@ -137,4 +138,29 @@ span {
   height: 20px;
   background-color: $ninho_orange;
   margin-top: -24px;
+}
+
+@media screen and (max-width: 575px) {
+  .header-section {
+    padding: 30px;
+  }
+  .body-section {
+    display: block;
+    .sub-section {
+      width: 80%;
+      max-width: 100%;
+      padding: 30px;
+    }
+  }.footer {
+     display: block;
+     .sub-section {
+       margin-top: 0;
+       width: 80%;
+       max-width: 100%;
+       padding: 30px 10px 0 30px;
+       input {
+         width: 150px;
+       }
+     }
+   }
 }
