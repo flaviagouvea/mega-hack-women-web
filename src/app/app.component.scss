@@ -61,12 +61,20 @@ span {
 }
 
 .download-btn {
+  text-decoration: none;
   border-radius: 21px;
   padding: 10px 40px;
   background-color: $ninho_orange;
   color: white;
   border: 0;
   cursor: pointer;
+}
+
+.download-btn:focus {
+  outline: none;
+  border: solid 1px black;
+  border-radius: 21px;
+  padding: 9px 39px;
 }
 
 .header-section {
@@ -92,20 +100,27 @@ span {
 }
 
 .testflight-btn {
+  text-decoration: none;
   border-radius: 10px;
   display: flex;
   line-height: 35px;
   border: 0;
   margin-top: 30px;
-  padding: 0 20px 0 0;
+  padding: 1px 20px 1px 1px;
   background: linear-gradient(0deg, rgba(49,119,236,1) 0%, rgba(87,193,245,1) 100%);
   color: white;
   font-family: "SF Pro Text Medium";
   cursor: pointer;
-  min-width: 210px;
+  width: 200px;
   img {
     padding-top: 2px;
   }
+}
+.testflight-btn:focus {
+  outline: none;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 0 19px 0 0;
 }
 
 .body-section {
@@ -140,15 +155,21 @@ span {
 
 .contact-us {
   margin-top: 40px;
-  h2 {
-    margin: 0;
+  .description-text {
+    max-width: 350px;
   }
 
   .email-input {
+    text-decoration: none;
     margin-top: 20px;
     border-radius: 20px 0 0 20px;
     padding: 8px 20px;
     border: solid 1px gray;
+  }
+  .email-input:focus {
+    outline: none;
+    border: solid 1px black;
+    border-radius: 20px 0 0 20px;
   }
   .sign-up {
     border-radius: 0 20px 20px 0;
@@ -157,6 +178,12 @@ span {
     color: white;
     border: 0;
     cursor: pointer;
+  }
+  .sign-up:focus {
+    outline: none;
+    border: solid 1px black;
+    border-radius: 0 20px 20px 0;
+    padding: 8px 34px 8px 29px;
   }
 }
 .footer {
@@ -177,6 +204,9 @@ span {
 }
 
 @media screen and (max-width: 575px) {
+  .fixed-toolbar {
+    width: 97%;
+  }
   .toolbar {
     width: 96%;
   }

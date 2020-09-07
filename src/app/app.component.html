@@ -8,9 +8,7 @@
     </div>
 
     <div>
-      <button class="download-btn">
-        Baixar no iOs
-      </button>
+      <a href="https://google.com" class="button download-btn">Baixar no iOs</a>
     </div>
   </div>
 </div>
@@ -31,10 +29,14 @@
         local de convivência seja sempre muito agradável para todos.
       </div>
 
-      <button class="testflight-btn">
+      <!--<button class="testflight-btn">
         <img width="50px" src="../assets/testflight.png">
         Baixar pelo TestFlight
-      </button>
+      </button>-->
+      <a href="https://google.com" class="button testflight-btn">
+        <img width="50px" src="../assets/testflight.png">
+        Baixar pelo TestFlight
+      </a>
     </div>
 
     <div class="sub-section">
@@ -54,15 +56,13 @@
 
         <div class="description-text">
           Queremos ajudar a tornar a sua casa um ambiente harmonioso
-          para que todos tenham a liberdade de alçar vôos cada vez mais
+          para que todos tenham a liberdade de alçar voos cada vez mais
           altos, sem esquecer do conforto que só o lar nos proporciona.
         </div>
 
         <div class="download-btns">
-          <button class="download-btn">
-            Baixar no iOS
-          </button>
-          <label>Em breve em Android</label>
+          <a href="https://google.com" class="button download-btn">Baixar no iOs</a>
+          <label class="description-text">Em breve em Android</label>
         </div>
       </div>
 
@@ -96,7 +96,7 @@
             <h4>Liste suas compras</h4>
           </div>
           <div class="description description-text">
-            Anotar os ítens antes de comprar econimiza tempo e dinheiro.
+            Anotar os itens antes de comprar economiza tempo e dinheiro.
             Crie uma lista compartilhada para que todos lembrem o que é necessário.
           </div>
         </div>
@@ -123,7 +123,7 @@
 
       <div class="contact-us sub-section">
         <h2>Mantenha contato conosco</h2>
-        Não se preocupe! Seu email está bem guardado com a gente :)
+        <div class="description-text">Não se preocupe! Seu email está bem guardado com a gente :)</div>
 
         <form class="contact-form" (submit)="sendEmail($event)" [formGroup]="form">
           <input class="email-input" type="email" name="user_email" placeholder="E-mail" formControlName="user_email">
@@ -131,7 +131,7 @@
             Inscrever
           </button>
         </form>
-        <label *ngIf="message">{{message}}</label>
+        <label *ngIf="message" class="description-text">{{message}}</label>
       </div>
 
       <div class="sub-section">
