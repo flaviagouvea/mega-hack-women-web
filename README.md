@@ -18,7 +18,7 @@ doméstica pessoas vulneráveis.
 
 
 ## Iniciando o projeto
- * Instale a última versão de [Noje.js](https://nodejs.org/en/download/) 
+ * Instale a última versão de [Node.js](https://nodejs.org/en/download/) 
  * Rodar `npm package manager`
  * Rodar `npm install -g @angular/cli`
  * Rodar `npm i`
